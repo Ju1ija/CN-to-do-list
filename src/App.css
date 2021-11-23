@@ -1,0 +1,128 @@
+.all-components {
+  display: flex;
+}
+
+.left-side, .right-side {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+}
+
+.left-side h2, .right-side h2, .app h1 {
+  text-transform: uppercase;
+}
+
+.left-side button, .right-side button {
+  height: 28px;
+}
+
+.advice-component, .activity-component {
+  margin-top: 70px;
+  height: 280px;
+}
+
+.weather-component p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-component i {
+  margin-right: 5px;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1E7056;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+  margin: 0 80px;
+  font-family: 'Amatic SC', cursive;
+}
+
+ul {
+  font-size: 24px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+#buttons {
+  display: flex;
+  margin-left: 20px;
+}
+
+#buttons button {
+  margin: 0 0 0 4px;
+  width: 50px;
+}
+
+button {
+  border: none;
+  height: 26px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  font-family: 'Amatic SC', cursive;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: #1E7056;
+}
+
+button:active {
+  color: #2CA981;
+}
+
+#add-button {
+  width: 210px;
+  height: 30px;
+}
+
+input {
+  border: none;
+  height: 28px;
+  width: 190px;
+  border-radius: 6px;
+  padding: 1px 10px;
+  margin-top: 20px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
